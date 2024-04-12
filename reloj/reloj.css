@@ -1,0 +1,43 @@
+.clock-container {
+    font-family: "share tech Mono", monospace;
+    text-align: center;
+    margin-top: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(62, 126, 138);
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #33333393;
+}
+
+.clock-container #time {
+    font-size: 60px;
+}
+
+.clock-container #date {
+    font-size: 20px;
+}
+
+.clock-container #greeting {
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.extra {
+    color: rgb(34, 14, 165) !important;
+}
+
+.comer {
+    color: brown
+}
+
+.tarde {
+    color: aqua;
+}
+
+.descansar {
+    color: burlywood;
+}
