@@ -1,7 +1,6 @@
 .clock-container {
-    font-family: "share tech Mono", monospace;
+    font-family: "Share Tech Mono", monospace;
     text-align: center;
-    margin-top: 50px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -26,12 +25,13 @@
     font-size: 22px;
 }
 
+
 .extra {
-    color: rgb(34, 14, 165) !important;
+    color: rgb(34, 14, 165);
 }
 
 .comer {
-    color: brown
+    color: brown;
 }
 
 .tarde {

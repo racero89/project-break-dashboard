@@ -1,65 +1,40 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-
-    margin-bottom: 15px;
-
+.pass {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #000;
+    text-align: center;
+    width: 300px;
+    color: white;
 }
 
-.titulo h1 {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    color: rgb(241, 235, 235);
-    font-size: 20px;
-    margin-bottom: 20px;
-
-}
-
-input {
-    margin-bottom: 15px;
-}
-
-input[type="text"] {
+input[type="number"] {
     padding: 10px;
     border: none;
     border-radius: 5px;
     margin-bottom: 20px;
-
-}
-
-
-
-button {
-    font-size: 20px;
-    padding: 10px 20px;
-    background-color: #0e539d;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 10px;
     width: 165px;
-    height: 40px;
-
-}
-
-.text {
-    font-size: smaller;
 }
 
 label {
     cursor: default;
-    justify-content: center;
     display: block;
     font-size: 18px;
-    margin-top: -65px;
     margin-bottom: 10px;
     color: white;
+    text-align: center;
+}
 
+#password {
+    margin-top: 20px;
+    font-family: monospace;
+    font-size: 18px;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 5px;
+    word-wrap: break-word;
+}
+
+button:hover {
+    background-color: #083d73;
 }

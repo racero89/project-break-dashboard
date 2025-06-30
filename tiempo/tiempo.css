@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222;
+}
+
+#weather {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    padding: 30px 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 280px;
+}
+
+#temperature {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#humidity {
+    font-size: 24px;
+}

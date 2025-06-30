@@ -38,8 +38,23 @@ function agregarEnlaceAlDOM(enlace) {
   a.textContent = enlace.titulo;
   a.target = "_blank";
 
+  const btnEliminar = document.createElement("button");
+  btnEliminar.textContent = "Eliminar";
+  btnEliminar.classList.add("btn-eliminar");
+  btnEliminar.addEventListener("click", function () {
+    eliminarEnlace(enlace.url);
+    contenedor.removeChild(linkItem);
+  });
+
   linkItem.appendChild(a);
+  linkItem.appendChild(btnEliminar);
   contenedor.appendChild(linkItem);
+}
+
+function eliminarEnlace(url) {
+  let enlaces = JSON.parse(localStorage.getItem("enlaces")) || [];
+  enlaces = enlaces.filter((enlace) => enlace.url !== url);
+  localStorage.setItem("enlaces", JSON.stringify(enlaces));
 }
 
 function limpiarInputs() {
