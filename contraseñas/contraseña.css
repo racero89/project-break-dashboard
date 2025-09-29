@@ -6,6 +6,10 @@
     text-align: center;
     width: 300px;
     color: white;
+    margin: 50px auto;
+
+    position: relative;
+
 }
 
 input[type="number"] {
@@ -14,6 +18,9 @@ input[type="number"] {
     border-radius: 5px;
     margin-bottom: 20px;
     width: 165px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 label {
@@ -33,8 +40,37 @@ label {
     padding: 10px;
     border-radius: 5px;
     word-wrap: break-word;
+    z-index: 10;
+
+    position: relative;
+
+    min-height: 30px;
+
+    color: #0f0;
+
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #055a9c;
+    color: white;
+    font-size: 16px;
 }
 
 button:hover {
     background-color: #083d73;
+}
+
+.back-link {
+    display: block;
+    margin-top: 25px;
+    color: #ccc;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    color: white;
 }

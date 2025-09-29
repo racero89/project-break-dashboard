@@ -1,18 +1,23 @@
-function updateWeather(temperature, humidity) {
-  document.getElementById(
-    "temperature"
-  ).textContent = `Temperatura: ${temperature}°C`;
-  document.getElementById("humidity").textContent = `Humedad: ${humidity}%`;
-}
-
 async function fetchWeather() {
-  try {
-    const response = await fetch("http://192.168.1.100/getWeatherData");
+  const apiKey = "4c709b4143cf49c08a992202252909";
+  const city = "Madrid";
 
-    if (!response.ok) throw new Error("Error en la respuesta");
+  try {
+    const response = await fetch(
+      `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`
+    );
+
+    if (!response.ok) throw new Error(`Error: ${response.status}`);
+
     const data = await response.json();
-    console.log(data);
-    updateWeather(data.temperature, data.humidity);
+
+    const temperature = data.current.temp_c;
+    const humidity = data.current.humidity;
+
+    document.getElementById(
+      "temperature"
+    ).textContent = `Temperatura: ${temperature}°C`;
+    document.getElementById("humidity").textContent = `Humedad: ${humidity}%`;
   } catch (error) {
     console.error("No se pudo obtener el clima:", error);
     document.getElementById("temperature").textContent =
